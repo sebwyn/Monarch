@@ -1,4 +1,4 @@
-#include "components/CamController2D.hpp"
+#include "components/2d/CamController2D.hpp"
 
 #include "components/Transform.hpp"
 

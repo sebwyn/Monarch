@@ -1,4 +1,4 @@
-#include "components/Sprite.hpp"
+#include "components/2d/Sprite.hpp"
 
 #include "components/Transform.hpp"
 #include "Renderer.hpp"

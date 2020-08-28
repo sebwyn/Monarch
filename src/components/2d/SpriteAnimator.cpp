@@ -1,6 +1,6 @@
-#include "components/SpriteAnimator.hpp"
+#include "components/2d/SpriteAnimator.hpp"
 
-#include "components/Sprite.hpp"
+#include "components/2d/Sprite.hpp"
 
 //temporarily use chrono for timing
 #include <chrono>

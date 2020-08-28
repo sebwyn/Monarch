@@ -6,7 +6,7 @@ const char* BatchRenderer2D::vertPath = "../../../Monarch/assets/shaders/vert.gl
 const char* BatchRenderer2D::fragPath = "../../../Monarch/assets/shaders/frag.glsl";
 
 unsigned int BatchRenderer2D::vao, BatchRenderer2D::vbo, BatchRenderer2D::ebo;
-unsigned int Renderer::blankTexture;
+unsigned int BatchRenderer2D::blankTexture;
 
 ShaderProgram* BatchRenderer2D::shader;
 

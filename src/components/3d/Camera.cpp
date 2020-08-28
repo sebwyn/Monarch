@@ -1,4 +1,4 @@
-#include "components/Camera.hpp"
+#include "components/3d/Camera.hpp"
 #include "components/Transform.hpp"
 
 #include <iostream>

@@ -8,8 +8,8 @@ find_library(glfw_path glfw)
 find_library(glew_path glew)
 find_package(OpenGL)
 
-link_libraries(${glfw_path} ${glew_path} ${OPENGL_gl_LIBRARY} freetype-gl ${FREETYPE_LIBRARIES})
+set(graphics_libs ${glfw_path} ${glew_path} ${OPENGL_gl_LIBRARY} freetype-gl ${FREETYPE_LIBRARIES} PARENT_SCOPE)
+set(graphics_includes ${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/${platform}/include /usr/local/include ${CMAKE_CURRENT_SOURCE_DIR}/ext/freetype-gl PARENT_SCOPE)
+set(graphics_src PARENT_SCOPE) 
 
-file(GLOB src_files *.cpp ${platform}/*.cpp)
-add_library(Graphics ${src_files}) 
-target_include_directories(Graphics PUBLIC include)  
+file(GLOB graphics_src *.cpp ${platform}/*.cpp)

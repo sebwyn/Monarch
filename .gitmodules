@@ -1,3 +1,6 @@
 [submodule "ext/bullet3"]
 	path = ext/bullet3
 	url = https://github.com/bulletphysics/bullet3
+[submodule "src/platforms/OpenGL/ext/freetype-gl"]
+	path = src/platforms/OpenGL/ext/freetype-gl
+	url = https://github.com/rougier/freetype-gl
