@@ -1,0 +1,6 @@
+[submodule "ext/freetype-gl"]
+	path = ext/freetype-gl
+	url = https://github.com/rougier/freetype-gl
+[submodule "ext/bullet3"]
+	path = ext/bullet3
+	url = https://github.com/bulletphysics/bullet3
