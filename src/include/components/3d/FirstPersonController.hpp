@@ -1,8 +1,8 @@
 #pragma once
 
-#include "ECS.h"
-#include "events/Keyboard.h"
-#include "events/Mouse.h"
+#include "ECS.hpp"
+#include "events/Keyboard.hpp"
+#include "events/Mouse.hpp"
 
 #include <glm/glm.hpp>
 

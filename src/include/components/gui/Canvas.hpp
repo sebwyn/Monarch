@@ -1,6 +1,6 @@
 #pragma once
 
-#include "components/gui/UIComponent.h"
+#include "components/gui/UIComponent.hpp"
 
 namespace Monarch {
 

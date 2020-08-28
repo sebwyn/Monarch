@@ -1,10 +1,10 @@
 #pragma once
 
-#include "ECS.h"
+#include "ECS.hpp"
 
-#include "components/Transform.h"
+#include "components/Transform.hpp"
 
-#include "optional.h"
+#include "optional.hpp"
 
 #include <glm/glm.hpp>
 #include <vector>

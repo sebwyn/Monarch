@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
-#include "events/Event.h"
+#include "events/Event.hpp"
 
 namespace Monarch {
 

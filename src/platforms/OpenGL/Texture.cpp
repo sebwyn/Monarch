@@ -1,9 +1,9 @@
-#include "Texture.h"
+#include "Texture.hpp"
 
 #include <iostream>
 
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#include "stb_image.hpp"
 
 using namespace Monarch;
 

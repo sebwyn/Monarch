@@ -8,7 +8,7 @@
 #include <bitset>
 #include <iostream>
 
-#include "events/Event.h"
+#include "events/Event.hpp"
 
 namespace Monarch {
     class Component;

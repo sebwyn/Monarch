@@ -6,7 +6,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-#include "events/Event.h"
+#include "events/Event.hpp"
 
 namespace Monarch {
 

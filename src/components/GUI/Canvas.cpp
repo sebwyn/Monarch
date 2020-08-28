@@ -1,6 +1,6 @@
-#include "components/gui/Canvas.h"
+#include "components/gui/Canvas.hpp"
 
-#include "Renderer.h"
+#include "Renderer.hpp"
 
 using namespace Monarch;
 

@@ -1,5 +1,5 @@
-#include "components/Camera.h"
-#include "components/Transform.h"
+#include "components/Camera.hpp"
+#include "components/Transform.hpp"
 
 #include <iostream>
 #include <GL/glew.h>

@@ -1,4 +1,4 @@
-#include "TrueTypeFont.h"
+#include "TrueTypeFont.hpp"
 
 #include <iostream>
 

@@ -1,9 +1,9 @@
 #pragma once
 
-#include "Window.h"
-#include "events/Event.h"
-#include "events/WindowEvent.h"
-#include "Layer.h"
+#include "Window.hpp"
+#include "events/Event.hpp"
+#include "events/WindowEvent.hpp"
+#include "Layer.hpp"
 
 #include <iostream>
 #include <memory>

@@ -1,2 +1,2 @@
-#include "Monarch.h"
-#include "EntryPoint.h"
+#include "Monarch.hpp"
+#include "EntryPoint.hpp"

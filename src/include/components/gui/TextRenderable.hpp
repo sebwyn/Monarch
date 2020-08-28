@@ -1,8 +1,8 @@
 #pragma once
 
-#include "ECS.h"
-#include "TrueTypeFont.h"
-#include "components/gui/UIComponent.h"
+#include "ECS.hpp"
+#include "TrueTypeFont.hpp"
+#include "components/gui/UIComponent.hpp"
 
 #include <glm/glm.hpp>
 #include <string>

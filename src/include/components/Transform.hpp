@@ -1,6 +1,6 @@
 #pragma once
 
-#include "ECS.h"
+#include "ECS.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/quaternion.hpp>

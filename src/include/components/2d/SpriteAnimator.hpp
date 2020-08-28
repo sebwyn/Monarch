@@ -1,7 +1,7 @@
 #pragma once
 
-#include "ECS.h"
-#include "TileSheet.h"
+#include "ECS.hpp"
+#include "TileSheet.hpp"
 
 #include <chrono>
 #include <map>

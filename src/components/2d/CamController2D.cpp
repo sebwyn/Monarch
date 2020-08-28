@@ -1,6 +1,6 @@
-#include "components/CamController2D.h"
+#include "components/CamController2D.hpp"
 
-#include "components/Transform.h"
+#include "components/Transform.hpp"
 
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/string_cast.hpp>

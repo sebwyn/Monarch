@@ -1,8 +1,8 @@
-#include "Window.h"
+#include "Window.hpp"
 
-#include "events/Mouse.h"
-#include "events/Keyboard.h"
-#include "events/WindowEvent.h"
+#include "events/Mouse.hpp"
+#include "events/Keyboard.hpp"
+#include "events/WindowEvent.hpp"
 
 namespace Monarch {
 

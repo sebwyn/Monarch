@@ -1,5 +1,5 @@
-#include "Application.h"
-#include "Renderer.h"
+#include "Application.hpp"
+#include "Renderer.hpp"
 
 #include <iostream>
 

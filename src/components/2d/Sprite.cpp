@@ -1,7 +1,7 @@
-#include "components/Sprite.h"
+#include "components/Sprite.hpp"
 
-#include "components/Transform.h"
-#include "Renderer.h"
+#include "components/Transform.hpp"
+#include "Renderer.hpp"
 
 #define GLM_ENABLE_EXPERIMENTAL
 #include "glm/gtx/string_cast.hpp"

@@ -1,4 +1,4 @@
-#include "BatchRenderer2D.h"
+#include "BatchRenderer2D.hpp"
 
 using namespace Monarch;
 

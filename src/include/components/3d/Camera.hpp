@@ -2,8 +2,8 @@
 
 #include <glm/glm.hpp>
 
-#include "ECS.h"
-#include "events/WindowEvent.h"
+#include "ECS.hpp"
+#include "events/WindowEvent.hpp"
 
 namespace Monarch {
 

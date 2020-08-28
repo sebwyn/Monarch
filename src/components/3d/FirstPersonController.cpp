@@ -1,7 +1,7 @@
-#include "components/FirstPersonController.h"
+#include "components/FirstPersonController.hpp"
 
-#include "components/Camera.h"
-#include "components/Transform.h"
+#include "components/Camera.hpp"
+#include "components/Transform.hpp"
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
