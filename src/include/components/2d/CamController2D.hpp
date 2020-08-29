@@ -11,8 +11,9 @@ namespace Monarch {
 
 class CamController2D : public Component {
 public:
-    virtual void update();
-    virtual bool onEvent(Event& e);
+    virtual void init() override;
+    virtual void update() override;
+    virtual bool onEvent(Event& e) override;
 private:
     float speed = 500;
 

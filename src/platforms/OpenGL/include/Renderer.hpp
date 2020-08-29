@@ -44,7 +44,7 @@ public:
         glm::vec4 color = {1,1,1,1};
         glm::vec2 bottomLeftTexCoords = {0,0};
         glm::vec2 topRightTexCoords = {1,1};
-        int texID = 0;
+        int texID = Renderer::blankTexture;
     };
 
     static void drawQuad(QuadData& data);

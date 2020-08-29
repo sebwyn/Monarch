@@ -11,6 +11,18 @@
 using namespace Monarch;
 using namespace glm;
 
+/*
+ * set the position of the camera such that it is looking at the x, y plane
+ * and positive x is the the right
+ */
+void CamController2D::init()
+{
+    Transform& entityTF = m_entity->getComponent<Transform>();
+
+    entityTF.setRotation(0, 3.141592, 0);
+    entityTF.setPosition(0, 0, 100);
+}
+
 void CamController2D::update(){
     static float lastTime = 0;
     float deltaTime = float(glfwGetTime()-lastTime);

@@ -2,8 +2,8 @@
 
 using namespace Monarch;
 
-const char* Renderer::vertPath = "../../../Monarch/assets/shaders/2D/vert.glsl";
-const char* Renderer::fragPath = "../../../Monarch/assets/shaders/2D/frag.glsl";
+const char* Renderer::vertPath = "/Users/sebastianwyngaard/Documents/programming/cpp_proj/RLlab/ext/Monarch/assets/shaders/2D/vert.glsl";
+const char* Renderer::fragPath = "/Users/sebastianwyngaard/Documents/programming/cpp_proj/RLlab/ext/Monarch/assets/shaders/2D/frag.glsl";
 
 unsigned int Renderer::vao, Renderer::vbo, Renderer::ebo;
 unsigned int Renderer::blankTexture;

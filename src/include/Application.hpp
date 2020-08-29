@@ -13,7 +13,7 @@ namespace Monarch {
 class Application {
 public:
 
-    Application();
+    Application(std::string name, int width, int height);
     virtual ~Application();
 
     void run();

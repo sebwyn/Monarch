@@ -5,9 +5,10 @@
 
 namespace Monarch {
 
-Application::Application(){
+Application::Application(std::string name, int width, int height)
+{
     alive = true;
-    window = std::unique_ptr<Window>(new Window("Monarch Island", 800, 800));
+    window = std::unique_ptr<Window>(new Window(name.c_str(), width, height));
     window->setEventCallback(std::bind(&Application::onEvent, this, std::placeholders::_1));
     Renderer::init();
 }
