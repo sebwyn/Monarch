@@ -52,16 +52,16 @@ void CamController2D::calcTranslationVector(float dt){
 bool CamController2D::onKeyPressed(KeyPressedEvent& e) {
     if(e.getIsRepeat()) return false;
     switch(e.getKey()){
-        case GLFW_KEY_W:
+        case GLFW_KEY_T:
             move += vec2(0, 1);
             break;
-        case GLFW_KEY_A:
+        case GLFW_KEY_F:
             move -= vec2(1, 0);
             break;
-        case GLFW_KEY_S:
+        case GLFW_KEY_G:
             move -= vec2(0, 1);
             break;
-        case GLFW_KEY_D:
+        case GLFW_KEY_H:
             move += vec2(1, 0);
             break;
         default:
@@ -72,16 +72,16 @@ bool CamController2D::onKeyPressed(KeyPressedEvent& e) {
 
 bool CamController2D::onKeyReleased(KeyReleasedEvent& e){
     switch(e.getKey()){
-        case GLFW_KEY_W:
+        case GLFW_KEY_T:
             move -= vec2(0, 1);
             break;
-        case GLFW_KEY_A:
+        case GLFW_KEY_F:
             move += vec2(1, 0);
             break;
-        case GLFW_KEY_S:
+        case GLFW_KEY_G:
             move += vec2(0, 1);
             break;
-        case GLFW_KEY_D:
+        case GLFW_KEY_H:
             move -= vec2(1, 0);
             break;
         default:
