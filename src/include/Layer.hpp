@@ -26,33 +26,37 @@ class LayerStack {
 public:
     //TODO: typecheck?
     template<typename T, typename... args>
-    void pushLayer(args&&... _args){
+    std::shared_ptr<Layer> pushLayer(args&&... _args){
         if(topLayer == layers.begin()){
-            layers.emplace_back(new T(std::forward<args>(_args)...));
+            layers.emplace_back(std::make_shared<T>(std::forward<args>(_args)...));
             topLayer = layers.begin();
         } else {
-            topLayer = layers.emplace(topLayer, new T(std::forward<args>(_args)...));
+            topLayer = layers.emplace(topLayer, std::make_shared<T>(std::forward<args>(_args)...));
         }
-        (*topLayer)->init();
+        auto newLayer = topLayer;
         topLayer++;
+
+        (*newLayer)->init();
+        return *newLayer;
     }
 
     //TODO: typecheck?
     template<typename T, typename... args>
-    void pushOverlay(args&&... _args){
-        layers.emplace_back(new T(std::forward<args>(_args)...));
+    std::shared_ptr<Layer> pushOverlay(args&&... _args){
+        layers.emplace_back(std::make_shared<T>(std::forward<args>(_args)...));
         (layers.back())->init();
+        return layers.back();
     }
     
     struct Iterators {
-        std::vector<std::unique_ptr<Layer>>::iterator begin, end;
-        std::vector<std::unique_ptr<Layer>>::reverse_iterator rbegin, rend;
+        std::vector<std::shared_ptr<Layer>>::iterator begin, end;
+        std::vector<std::shared_ptr<Layer>>::reverse_iterator rbegin, rend;
     };
 
     Iterators getIterators(){return {layers.begin(), layers.end(), layers.rbegin(), layers.rend()};}
 private:
-    std::vector<std::unique_ptr<Layer>> layers = std::vector<std::unique_ptr<Layer>>();
-    std::vector<std::unique_ptr<Layer>>::iterator topLayer = layers.begin();
+    std::vector<std::shared_ptr<Layer>> layers = std::vector<std::shared_ptr<Layer>>();
+    std::vector<std::shared_ptr<Layer>>::iterator topLayer = layers.begin();
 };
 
 }
