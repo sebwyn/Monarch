@@ -35,7 +35,7 @@ bool FirstPersonController::onKeyPressed(KeyPressedEvent& e) {
         default:
             return false;
     }
-    return true;
+    return false;
 }
 
 bool FirstPersonController::onKeyReleased(KeyReleasedEvent& e){
@@ -61,7 +61,7 @@ bool FirstPersonController::onKeyReleased(KeyReleasedEvent& e){
         default:
             return false;
     }
-    return true;
+    return false;
 }
 
 bool FirstPersonController::onCursorMove(MouseMovedEvent& e) {
@@ -71,7 +71,7 @@ bool FirstPersonController::onCursorMove(MouseMovedEvent& e) {
     rotate = vec2(0,float(width/2-e.getX()));
     rotate += vec2(-float(height/2-e.getY()),0);
     //should we return true?
-    return true;
+    return false;
 }
 
 void FirstPersonController::calcTranslation(float dt){

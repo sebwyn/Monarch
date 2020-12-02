@@ -11,10 +11,12 @@ set(src_files ${src_files} ${graphics_src})
 
 link_libraries(${graphics_libs})
 
+configure_file(MonarchConfig.hpp.in MonarchConfig.hpp)
+
 add_library(MonarchRelease ${src_files})
-target_include_directories(MonarchRelease PUBLIC include ${graphics_includes})
+target_include_directories(MonarchRelease PUBLIC include ${graphics_includes} "${CMAKE_CURRENT_BINARY_DIR}")
 set_target_properties(MonarchRelease PROPERTIES OUTPUT_NAME "Monarch")
 
 add_library(MonarchDebug ${src_files})
-target_include_directories(MonarchDebug PUBLIC include ${graphics_includes})
+target_include_directories(MonarchDebug PUBLIC include ${graphics_includes} "${CMAKE_CURRENT_BINARY_DIR}")
 set_target_properties(MonarchDebug PROPERTIES OUTPUT_NAME "Monarch_d" COMPILE_FLAGS " -g -D DEBUG_BUILD")

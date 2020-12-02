@@ -13,8 +13,8 @@ namespace Monarch {
 //TODO: try to make the first person controller not completely override the entities transform
 class FirstPersonController : public Component {
 private:
-    float speed = 100;
-    float mouseSpeed = 0.3;
+    float speed = 1;
+    float mouseSpeed = 0.2;
 
     glm::vec2 rotate = glm::vec2(0,0);
     glm::vec3 move = glm::vec3(0,0,0);

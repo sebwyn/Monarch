@@ -18,14 +18,16 @@ public:
 
     void run();
 
-    virtual void update() = 0;
     void shutdown();
 
-    virtual void onEvent(Event& e);
+    void onEvent(Event& e);
     bool onWindowClosed(WindowClosedEvent& e);
 
 protected:
     LayerStack layers;
+
+    virtual void update() = 0;
+    virtual void handleEvent(Event& e){}
 
     std::unique_ptr<Window> window;
 private:
