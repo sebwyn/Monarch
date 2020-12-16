@@ -57,7 +57,7 @@ unsigned short CubeRenderer::numCubes = 0;
 void CubeRenderer::init()
 {
     glDisable(GL_DEPTH_TEST | GL_CULL_FACE);
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
     vertices = new Vertex[MAX_CUBES * 8];
 
