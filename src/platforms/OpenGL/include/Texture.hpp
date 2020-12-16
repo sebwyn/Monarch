@@ -9,6 +9,8 @@ namespace Monarch {
 
 class Texture {
 public:
+    //suport for 3d textures
+    Texture(unsigned char* data, int width, int height, int depth, int nrChannels);
     Texture(unsigned char* data, int width, int height, int nrChannels);
     Texture(const char* path);
 
@@ -18,6 +20,7 @@ public:
 
     inline int getWidth() const { return m_width; }
     inline int getHeight() const { return m_height; }
+    inline int getDepth() const { return m_depth; }
 
     inline unsigned int get() const { return m_texture; }
 
@@ -33,6 +36,7 @@ private:
     void createTexture(unsigned char* data);
 
     unsigned int m_texture;
-    int m_width, m_height, m_nrChannels;
+    int m_width, m_height, m_depth, m_nrChannels;
+    GLenum m_glTexture;
 };
 }
